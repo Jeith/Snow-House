@@ -48,7 +48,7 @@ app.use(bodyParser.text())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 // Enforces HTTPS
-app.use(enforce.HTTPS({ trustProtoHeader: true }))
+// app.use(enforce.HTTPS({ trustProtoHeader: true }))
 
 //= =====ROUTES=============
 app.use('/', indexRouter)
